@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10091f">
+  <title>Universal Stylish Nickname Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="logo">✦ NAME LAB ✦</div>
+    <h1>Stylish Nickname Generator</h1>
+    <p>Apna naam likho, style chuno aur apna unique nickname banao!</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <label for="baseName">Apna naam ya word likho</label>
+      <input id="baseName" type="text" maxlength="30" placeholder="Yahan apna naam likho..." autocomplete="off">
+
+      <div class="two-col">
+        <div>
+          <label for="category">Nickname ka mood chuno</label>
+          <select id="category">
+            <option value="all">Sabhi Styles</option>
+            <option value="pro">Pro Gamer</option>
+            <option value="attitude">Attitude</option>
+            <option value="royal">Royal</option>
+            <option value="killer">Killer / Dark</option>
+            <option value="cute">Cute / Love</option>
+            <option value="desi">Desi / Hinglish</option>
+            <option value="minimal">Simple / Clean</option>
+          </select>
+        </div>
+        <div>
+          <label for="style">Symbol style chuno</label>
+          <select id="style">
+            <option value="mixed">Mixed Stylish</option>
+            <option value="brackets">Brackets</option>
+            <option value="stars">Stars</option>
+            <option value="royal">Royal Symbols</option>
+            <option value="arrows">Arrows</option>
+            <option value="minimal">Minimal</option>
+            <option value="unicode">Unicode Font</option>
+            <option value="plain">Normal Text</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="amount">Ek baar mein kitne nickname banayein?</label>
+      <select id="amount">
+        <option value="10">10 Nicknames</option>
+        <option value="20" selected>20 Nicknames</option>
+        <option value="40">40 Nicknames</option>
+        <option value="80">80 Nicknames</option>
+      </select>
+
+      <div class="button-row">
+        <button id="generateBtn" class="primary">⚡ Nicknames Generate Karo</button>
+        <button id="clearBtn" class="secondary">Clear</button>
+      </div>
+      <p class="hint">Koi naam pehle se set nahi hai. Pehle apna naam likho, phir Generate dabao.</p>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="results-section">
+      <div class="section-head">
+        <h2>Tumhare Stylish Nicknames</h2>
+        <button id="copyAllBtn" class="secondary" disabled>Sab Copy Karo</button>
+      </div>
+      <div id="results" class="results empty">
+        <div class="empty-icon">✧</div>
+        <p>Abhi koi nickname nahi bana.</p>
+        <p>Apna naam likhkar Generate dabao!</p>
+      </div>
+    </section>
+    <p class="footnote">Tip: Har game ya app sabhi special symbols ko support nahi karta. Agar koi style accept na ho, dusra style try karo.</p>
+  </main>
+
+  <footer>NAME LAB · Free nickname tool · Full Hinglish interface</footer>
+  <script src="script.js"></script>
+</body>
+</html>
